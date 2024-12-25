@@ -18,7 +18,6 @@ function mensagemInicial(){
     exibirTextoNaTela('h1','Jogo do número secreto!');
     exibirTextoNaTela('p', `Escolha um número entre 1 e ${numeroLimite}`);
 }
-mensagemInicial();
 function verificarChute(){
     let chute = document.querySelector('input').value;
     if (chute == numeroSecreto){
@@ -63,3 +62,4 @@ function reiniciarJogo(){
     mensagemInicial();
     document.getElementById('reiniciar').setAttribute('disabled',true);
 }
+mensagemInicial();
